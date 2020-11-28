@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>example title</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/mflx.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+	<!--modals up here-->
+	<div class="modal">
+		<div class="modal-close"><i class="fa fa-close fa-3x icon "></i></div>
+		<div class="modal-content flx(column) center middle">
+			<ul class="flx(column) space-evenly ">
+					<a class="modal-link" href="#"><li>link 1</li></a>
+					<a class="modal-link" href="#"><li>link 2</li></a>
+					<a class="modal-link" href="#"><li>link 3</li></a>
+					<a class="modal-link" href="#"><li>link 4</li></a>
+			</ul>
+		</div>
+	</div>
+	<!--create 3 sections -->
+	<nav class="nav flx(wrap) space-around center is-12 padme">
+				<div class="flx is-3 center middle">
+					<i class="fa fa-tree fa-3x icon" aria-hidden="true"></i>
+				</div>
+				
+				<ul class="flx(wrap) is-half space-evenly">
+					<a href="#"><li>link 1</li></a>
+					<a href="#"><li>link 2</li></a>
+					<a href="#"><li>link 3</li></a>
+					<a href="#"><li>link 4</li></a>
+				</ul>
+			</nav>
+	<nav class="mobile-nav flx(wrap) space-around center is-12">
+		<div class="flx is-4 left middle">
+			<i class="fa fa-tree fa-3x icon" aria-hidden="true"></i>
+		</div>
+		<div class="flx is-4 right middle">
+			<div><i class="fa fa-bars fa-4x icon hamburger" aria-hidden="true"></i></div>
+		</div>
+		
+	</nav>
+
+	<section class="section-border title-image">
+			
+
+		<div style="height: 50rem;" class="section-border flx(column,wrap) middle center is-12">
+			<h1>Project Title</h1>
+			<a href="#contact-us" class="btn is-warning">contact us</a>
+		</div>
+	</section>
+	<section class="flx(wrap) is-fluid section-border">
+		<div class="flx(wrap) center is-12">
+			<h2>Subtitle</h2>
+		</div>
+		<div class="flx(wrap) space-around is-full" style="margin-bottom: 6rem;">
+			<div class="flx left is-6">
+				<img src="http://placekitten.com/550/300" />
+			</div>
+			
+			<div class="flx center middle is-6" >
+				<p style="max-width: 25rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			
+		</div>
+		<div class="flx(wrap) space-evenly is-full" style="margin-bottom: 6rem;">
+			<div class="flx center middle is-3">
+				<p style="max-width: 25rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="flx center is-3" >
+				<img src="http://placekitten.com/500/300" />
+			</div>
+		</div>
+	</section>
+	<section id="contact-us" class="section-border contact-image" >
+		<div class="flx(wrap,column) space-evenly middle is-full" style="height: 50rem;">
+			
+				<h2 class="contact" style="max-width: 20rem;">Contact Form</h2>
+
+			<form class="flx(wrap) center middle card">
+				<div class="is-full">
+					<label>input1</label>
+					<input id="input-1" class="padme is-full" type="text" name="">
+				</div>
+				<div class="is-full ">
+					<label>input2</label>
+					<input id="input-2" class="padme is-full" type="text" name="">
+				</div>
+				<div class="is-full">
+					<label>Text area</label>
+					<textarea id="input-textarea" class="is-full padme" placeholder="type something here if you like"></textarea>
+				</div>
+				<div class="flx right is-full">
+					<button class="btn is-info" type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+		<footer style="height: 20rem;" class="flx(wrap) space-evenly middle">
+			<div class="flx(wrap,column) center is-1">
+				<span><i class="fa fa-map-marker" aria-hidden="true"></i>Address</span>
+				<span><i class="fa fa-phone" aria-hidden="true"></i>Phone</span>
+				<span><i class="fa fa-envelope" aria-hidden="true"></i>Email</span>
+			</div>
+			<div class="flx(wrap) center middle is-1">
+				<ul style="margin-right: 1rem;">
+					<a href="#"><li>link 1</li></a>
+					<a href="#"><li>link 2</li></a>
+					<a href="#"><li>link 3</li></a>
+				</ul>
+				<ul>
+					<a href="#"><li>link 4</li></a>
+					<a href="#"><li>link 5</li></a>
+					<a href="#"><li>link 6</li></a>
+				</ul>
+			</div>
+			<div class="flx is-full center middle" style="border-top:white solid 1px;">
+				<span>ACME company &copy; Some Rights Reserved</span>
+			</div>
+		</footer>
+	</section>
+	
+	<script src="index.js"></script>
+</body>
+</html>
