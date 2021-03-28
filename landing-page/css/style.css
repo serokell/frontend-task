@@ -1,0 +1,498 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body
+{
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden !important;
+    margin-bottom: 0 auto;
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --color-orange: #ffa500;
+    --color-black: #020202;
+    --color-green: #28a745;
+    --color-gry: #a2a2a2;
+    --color-white: #ffff;
+  }
+
+p, h1 ,h2 ,h3, h4, h5, h6 {
+    margin: 0 !important;
+}
+
+.all-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/* css */
+.top-bar
+{
+    padding: 10px 0;
+    background-color: var(--color-black);
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+.top-bar .logo a
+{
+    font-size: 25px;
+    padding-left: 5px;
+    font-family: serif;
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.top-bar .logo i
+{
+    color: var(--color-orange);
+}
+
+.top-bar .nav 
+{
+    float: right;
+    padding-top: 8px;
+}
+
+.top-bar .nav ul
+{
+    display: flex;
+    list-style: none;
+}
+
+.top-bar .nav li a
+{
+    color: var(--color-white);
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.top-bar .nav li a:hover
+{
+    color: var(--color-orange);
+    border-radius: 4px; 
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* dropdown buttn */
+
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: var(--color-white);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a 
+{
+    color: var(--color-black);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.parent li>a:hover  .dropdown-content {display: block;}
+
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color-black);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+      
+.sidenav a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color-white);
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+      
+.sidenav a:hover 
+{
+    color: var(--color-orange);
+}
+      
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 35px;
+    margin-left: 50px;
+}
+ 
+/* menu desktop and mobile switching on responsive  */
+@media screen and (max-height: 450px)
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.mobile-nav
+{
+    display: none;
+}  
+
+    
+.openbtn, .closebtn
+{
+    cursor: pointer;
+    font-size: 35px;
+}
+    
+.openbtn
+{
+    color: var(--color-orange);
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 1;
+    font-size: 30px;
+    display: none;
+}
+
+.top-bar .mobile-nav .icon1
+{
+    padding-top: 10%;
+    display: flex;
+    padding-left: 17%;
+}
+
+.top-bar .mobile-nav .icon1 i
+{
+    font-size: 35px;
+}
+
+.slider{
+    width: 100%;
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: #272727;
+    background-blend-mode: soft-light;
+    padding: 15% 0;
+}
+
+.slider h1{
+    color: var(--color-white);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.slider .buttons{
+    margin-top: 3%;
+}
+
+.slider .buttons button{
+    background-color: var(--color-orange);
+    border: 1px solid var(--color-orange);
+    font-size: 16px;
+    padding: 5px 30px;
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+.slider .buttons button:hover{
+    background-color: var(--color-green);
+    border: 1px solid var(--color-green);
+    color: var(--color-white);
+    transition: 0.5s;
+    opacity: 0.5s;
+}
+
+.service{
+    padding: 5% 0;
+    background-color: var(--color-white);
+}
+
+.service h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.service .inner{
+    margin-top: 10%;
+}
+
+.service .inner .image img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.service .inner .image1 img{
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    float: right;
+}
+
+.service .inner p{
+    color:  var(--color-gry);
+    font-size: 14px;
+    padding-top: 20%;
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: #0e0e0e;
+    background-blend-mode: soft-light;
+    padding: 8% 0;
+}
+
+.contact .box{
+    background-color: var(--color-white);
+    padding: 7% 7% 10% 7%;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.contact .box h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact .box .form-group {
+    margin-top: 5%;
+}
+
+.footer{
+    background-color: var(--color-black);
+    padding: 10px 0;
+}
+
+.footer .main{
+    padding: 20px 0;
+}
+
+.footer .icon{
+    float: left;
+}
+
+.footer .icon ul{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.footer .icon li{
+    padding: 10px 0;
+}
+
+.footer .icon a{
+    color: var(--color-white);
+    font-size: 15px;
+}
+
+.footer .icon i{
+    font-size: 15px;
+    color: var(--color-orange);
+    padding-right: 10px;
+}
+
+.footer .icon a:hover{
+    color: var(--color-orange);
+    transition: 0.5s;
+    opacity: 0.5s;
+}
+
+.footer .links{
+    float: right;
+}
+
+.footer .links ul{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.footer .links li{
+    padding: 5px 0;
+}
+
+.footer .links a{
+    color: var(--color-white);
+    font-size: 15px;
+}
+
+.footer .links a:hover{
+    color: var(--color-orange);
+    transition: 0.5s;
+    opacity: 0.5s;
+}
+
+.footer .seprator{
+    background-color: #333333;
+    width: 100%;
+    height: 1px;
+}
+
+.footer .copy-right{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer .copy-right p{
+    color: var(--color-gry);
+    font-size: 13px;
+}
+
+
+
+
+/* menu desktop and mobile switching on responsive  */
+@media screen and (max-width: 1920px)
+{
+
+}
+
+/* menu desktop and mobile switching on responsive  */
+@media screen and (max-width: 1366px)
+{
+
+}
+
+/* menu desktop and mobile switching on responsive  */
+@media screen and (max-width: 768px)
+{
+    .openbtn
+    {
+        display: block;
+    }
+
+    .mobile-nav
+    {
+        display: block;
+    }
+
+    .top-bar .nav
+    {
+        display: none;
+    }
+
+    .top-bar .mobile-nav .icon1 {
+        padding-left: 31%;
+    }
+
+    .slider{
+        height: 60vh;
+        padding: 20% 0;
+    }
+
+    .contact .box {
+        padding: 10% 5% 15% 5%;
+    }
+    
+}
+
+/* menu desktop and mobile switching on responsive  */
+@media screen and (max-width: 600px)
+{
+    .top-bar .mobile-nav .icon1 {
+        padding-left: 15%;
+    }
+
+    .slider {
+        height: 60vh;
+        padding-top: 35%;
+    }
+
+    .slider .buttons {
+        margin-top: 10%;
+    }
+
+    .service {
+        padding: 10% 0;
+    }
+
+    .service .inner {
+        margin-top: 10%;
+    }
+
+    .service .inner .image img {
+        width: 100%;
+    }
+
+    .service .inner p{
+        padding-top: 0;
+    }
+
+    .service .inner .image1 img {
+        height: 350px;
+        float: unset;
+        display: block;
+        margin: auto;
+    }
+
+    .contact{
+        padding: 15% 0;
+    }
+
+    .contact .box {
+        padding: 7% 7% 15% 7%;
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .footer .links {
+        float: unset;
+        margin-top: 5%;
+    }
+
+}
+
+/* menu desktop and mobile switching on responsive  */
+@media screen and (max-width: 425px)
+{
+    
+}
+
+/* menu desktop and mobile switching on responsive  */
+@media screen and (max-width: 375px)
+{
+    
+}
