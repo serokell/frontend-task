@@ -30,7 +30,7 @@ Last element on the page is a footer with some contact information to the left, 
 
 ### Code
 
-* Project contains one file with page's HTML, one file with page's JS and styles with the main file and imported components styles
+* Project contains one file with page's HTML, one file with page's JS and styles with the main file and imported components styles. No external libraries used (jQuery, Bootstrap, etc.)
 * BEM methodology is used for the naming of class elements (`block__element-modifier`)
 * Code is formatted according to the [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 
