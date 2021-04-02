@@ -1,0 +1,30 @@
+section {
+  .services {
+    padding: 35px 0px;
+    .heading {
+      h1 {
+        font-size: 32px;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+      }
+    }
+    .works {
+      .content {
+        padding-top: 20px;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          object-position: center;
+        }
+        p {
+          font-size: 15px;
+          line-height: 1.7;
+          color: black;
+          padding-top: 45px;
+        }
+      }
+    }
+  }
+}
