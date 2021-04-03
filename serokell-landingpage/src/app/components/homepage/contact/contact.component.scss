@@ -1,11 +1,18 @@
 section {
   .contact-form {
-    padding-bottom: 35px;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1a1a1af0;
+    background-blend-mode: soft-light;
+    padding: 35px 0px;
       .heading {
         h1 {
           font-size: 32px;
           font-weight: 600;
-          color: black;
+          color: white;
           text-align: center;
         }
       }
@@ -13,7 +20,23 @@ section {
         padding-top: 15px;
         label {
           padding-top: 15px;
+          color: white;
+        }
+        button {
+          padding: 4px 35px;
+          font-size: 15px;
+          background: white;
+          color: black;
         }
       }
   }
+}
+
+.form-control {
+  &::placeholder {
+    color: white;
+  }
+  color: white;
+  border: 2px solid white;
+  background-color: #ffffff52;
 }
