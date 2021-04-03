@@ -1,5 +1,19 @@
-.contact-form {
-  label {
-    padding-top: 15px;
+section {
+  .contact-form {
+    padding-bottom: 35px;
+      .heading {
+        h1 {
+          font-size: 32px;
+          font-weight: 600;
+          color: black;
+          text-align: center;
+        }
+      }
+      form {
+        padding-top: 15px;
+        label {
+          padding-top: 15px;
+        }
+      }
   }
 }
