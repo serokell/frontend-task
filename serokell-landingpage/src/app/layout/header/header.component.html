@@ -1,1 +1,33 @@
-<p>header works!</p>
+<header>
+    <!-- desktop-navbar -->
+    <div class="top-bar">
+        <span class="openbtn" (click)="toggleNav()">&#9776;</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="logo">
+                        <a>Serokell</a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-8">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- mobile side-menu -->
+                <div class="mobile-nav">
+                    <div class="sidenav" [ngClass]="{'open': show === true}">
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
