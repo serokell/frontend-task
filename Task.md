@@ -33,7 +33,7 @@ Last element on the page is a footer with some contact information to the left, 
   * Script file (JavaScript/TypeScript)
   * Styles file (CSS/SCSS)
 - [ ] No external libraries used (jQuery, Bootstrap, etc.)
-- [ ] BEM methodology is used for the naming of class elements (`block__element-modifier`)
+- [ ] BEM methodology is used for the naming of class elements (`block__element--modifier`)
 - [ ] Code is formatted according to the [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 - [ ] Page looks good on mobile devices
 - [ ] Page looks similar in main browsers (Chrome, Firefox[, Safari])
